@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Hong's note</a></h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+        
+            <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/login1">login1</a></li>
+                        <li><a href="/register">register</a></li>
+                        <li><a href="/memo">Memo</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                        <a href="#" class="close">Close</a>
+            </div>
+        </nav>
+ 
+<body>
+    <div class="login-page">
+        <form action="/register" method="POST">
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="text" placeholder="username" name="username">
+            <input type="password" placeholder="password" name="password">
+            <button type="submit">Create</button>
+        </form>
+        <br>
+    {%if inputstatus==True%}
+        <span>hello {{inputid}}</span>
+    {%else%}
+        <span>hello nobody</span>
+    {%endif%}
+        <form action="/login1" method="POST">
+            <input type="text" placeholder="username" name="username">
+            <input type="password" placeholder="password" name="password">
+            <button type="submit">Login</button>
+        </form>
+        <br>
+        <br>
+        <form action="/logout" method="POST">
+            <button type="submit">LOGOUT</button>
+        </form>
+    </div> 
+</body>
+</html>
